@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.profile-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    border: 5px solid #3498db;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #777;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+.pricing-tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.price-table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.price-header {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .pricing-tables {
+        flex-direction: row;
+    }
+    
+    .price-table {
+        width: calc(50% - 10px);
+    }
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
